@@ -1,7 +1,7 @@
 # RIBs-KMP
 
-An imperative [RIBs](https://github.com/uber/RIBs)-style architecture framework for **Kotlin
-Multiplatform** — Router / Interactor / Builder / Presenter + View, with a coroutine-based `Workflow`
+An imperative RIBs-style ([RIBs](https://github.com/uber/RIBs) · [RIBs-iOS](https://github.com/uber/RIBs-iOS))
+architecture framework for **Kotlin Multiplatform** — Router / Interactor / Builder / Presenter + View, with a coroutine-based `Workflow`
 engine for deep-link and cross-tree navigation.
 
 RIBs-KMP is **free** and distributed as **closed-source, binary artifacts** — public on Maven Central,
