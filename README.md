@@ -41,8 +41,16 @@ Two layers, as in any KMP + native app:
 1. **Shared logic** — your shared Kotlin module depends on `ribs` from Maven Central (above); your
    Gradle build compiles it into the framework Xcode embeds. You do *not* add `ribs` to Xcode
    directly.
-2. **Native view bridges** (`RibsUIKit` / `RibsSwiftUI`) — a binary Swift package, added in Xcode via
-   this repo's URL. *Coming soon* — the public XCFramework release is in progress.
+2. **Native view bridges** (`RibsUIKit` / `RibsSwiftUI`) — a Swift package. In Xcode: **File → Add
+   Package Dependencies** → `https://github.com/The-Mobile-Engineer/RIBs-KMP` → pick `RibsUIKit`
+   and/or `RibsSwiftUI`. Or in `Package.swift`:
+
+   ```swift
+   .package(url: "https://github.com/The-Mobile-Engineer/RIBs-KMP.git", from: "0.1.0")
+   ```
+
+   These are pure Swift (no Kotlin dependency); you implement the KMP-defined view interfaces against
+   them via DI.
 
 ## Platforms
 
@@ -51,7 +59,7 @@ Two layers, as in any KMP + native app:
 | Android | `io.mobileengineer:ribs` (AAR) from Maven Central |
 | JVM / Desktop | `io.mobileengineer:ribs` (jar) from Maven Central |
 | iOS / macOS (Kotlin) | `io.mobileengineer:ribs` (klib) from Maven Central |
-| iOS / macOS (native views) | `RibsUIKit` / `RibsSwiftUI` Swift package *(coming soon)* |
+| iOS / macOS (native views) | `RibsUIKit` / `RibsSwiftUI` Swift package (SPM, this repo) |
 | Web (JS/TS) | `@mobileengineer/ribs-web` on npm *(planned)* |
 
 ## Docs
