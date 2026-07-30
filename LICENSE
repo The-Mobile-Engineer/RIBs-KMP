@@ -1,0 +1,35 @@
+RIBs-KMP — Proprietary License
+
+  ⚠️ DRAFT — pending review by legal counsel before public release.
+     Do not treat the terms below as final.
+
+Copyright (c) 2026 The Mobile Engineer (Alex Bush). All rights reserved.
+
+RIBs-KMP ("the Software") is licensed, not sold. The Software is distributed only
+in compiled/binary form. The source code is proprietary and is not provided.
+
+1. Grant. Subject to these terms, you are granted a worldwide, royalty-free,
+   non-exclusive license to use, and to link the compiled artifacts of, the
+   Software in your own applications and libraries, and to distribute those
+   applications and libraries to your end users.
+
+2. Restrictions. You may not: (a) decompile, disassemble, reverse engineer, or
+   otherwise attempt to derive the source code of the Software, except to the
+   extent this restriction is prohibited by applicable law; (b) redistribute the
+   Software's artifacts on a standalone basis or as part of another SDK,
+   framework, or developer tool; (c) remove or alter any copyright, attribution,
+   or license notices; or (d) represent the Software as your own work.
+
+3. Third-party components. The Software is inspired by and may include portions
+   derived from Uber's RIBs, licensed under the Apache License 2.0. See
+   THIRD-PARTY-NOTICES.md and licenses/APACHE-2.0.txt.
+
+4. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+5. Limitation of liability. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM,
+   DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
+   SOFTWARE OR ITS USE.
+
+6. Reservation. All rights not expressly granted are reserved by the author.
