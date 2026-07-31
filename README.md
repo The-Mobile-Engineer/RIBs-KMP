@@ -5,7 +5,7 @@ architecture framework for **Kotlin Multiplatform** — Router / Interactor / Bu
 engine for deep-link and cross-tree navigation.
 
 **Free**, and on Maven Central — one dependency gives you the framework on **Android, iOS, macOS,
-desktop/JVM, and web**. No account, no credentials, nothing to configure.
+desktop/JVM, and web**.
 
 > Inspired by Uber's RIBs, independently reimplemented and substantially extended for Kotlin
 > Multiplatform. Not affiliated with or endorsed by Uber. See [THIRD-PARTY-NOTICES](THIRD-PARTY-NOTICES.md).
@@ -24,7 +24,7 @@ commonMain.dependencies {
 ```
 
 That one coordinate covers **Android (AAR), JVM/desktop, iOS, macOS, and JS** — Gradle picks the
-right target automatically. No credentials; CI works out of the box. Imports are `com.ribs.*`:
+right target automatically. Imports are `com.ribs.*`:
 
 ```kotlin
 import com.ribs.Router
