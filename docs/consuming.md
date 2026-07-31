@@ -110,8 +110,5 @@ RIBs-KMP is public and free — no account, token, or repo access:
 
 - **Maven Central** → `io.mobileengineer:ribs` / `ribs-compose`, resolved anonymously via
   `mavenCentral()`.
-- **SPM** (`RibsUIKit` / `RibsSwiftUI`) → a binary Swift package from this repo (public), no
-  credentials. *(Public XCFramework release in progress.)*
+- **SPM** (`RibsUIKit` / `RibsSwiftUI`) → a Swift package from this repo (public), no credentials.
 - **npm** (`@mobileengineer/ribs-web`) → public npm. *(Planned.)*
-
-The framework source stays private; you consume compiled, binary artifacts.

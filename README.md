@@ -4,9 +4,8 @@ An imperative RIBs-style ([RIBs](https://github.com/uber/RIBs) · [RIBs-iOS](htt
 architecture framework for **Kotlin Multiplatform** — Router / Interactor / Builder / Presenter + View, with a coroutine-based `Workflow`
 engine for deep-link and cross-tree navigation.
 
-RIBs-KMP is **free** and distributed as **closed-source, binary artifacts** — public on Maven Central,
-no account or credentials required. One dependency gives you the framework on **Android, iOS, macOS,
-desktop/JVM, and web**.
+**Free**, and on Maven Central — one dependency gives you the framework on **Android, iOS, macOS,
+desktop/JVM, and web**. No account, no credentials, nothing to configure.
 
 > Inspired by Uber's RIBs, independently reimplemented and substantially extended for Kotlin
 > Multiplatform. Not affiliated with or endorsed by Uber. See [THIRD-PARTY-NOTICES](THIRD-PARTY-NOTICES.md).
@@ -69,5 +68,5 @@ Two layers, as in any KMP + native app:
 
 ## License
 
-Proprietary — free to use, closed source. See [LICENSE](LICENSE). Contains components derived from
-Uber's RIBs (Apache-2.0); see [THIRD-PARTY-NOTICES](THIRD-PARTY-NOTICES.md).
+Free to use — see [LICENSE](LICENSE). Includes components derived from Uber's RIBs (Apache-2.0); see
+[THIRD-PARTY-NOTICES](THIRD-PARTY-NOTICES.md).
