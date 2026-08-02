@@ -7,6 +7,9 @@ engine for deep-link and cross-tree navigation.
 **Free**, and on Maven Central — one dependency gives you the framework on **Android, iOS, macOS,
 desktop/JVM, and web**.
 
+> ⚠️ **Beta (`0.x`).** The API is still stabilizing — expect breaking changes between releases until
+> `1.0`. Pin an exact version and check the release notes before upgrading.
+
 > Inspired by Uber's RIBs, independently reimplemented and substantially extended for Kotlin
 > Multiplatform. Not affiliated with or endorsed by Uber. See [THIRD-PARTY-NOTICES](THIRD-PARTY-NOTICES.md).
 
