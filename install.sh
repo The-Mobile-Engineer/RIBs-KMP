@@ -36,12 +36,12 @@ curl -fsSL "https://github.com/$REPO/releases/latest/download/$asset" -o "$INSTA
 chmod +x "$INSTALL_DIR/ribs"
 echo "ribs: installed CLI -> $INSTALL_DIR/ribs"
 
-# --- Claude skills (create-rib, review-rib) -------------------------------
-for skill in create-rib review-rib; do
-  mkdir -p "$SKILLS_DIR/$skill"
-  curl -fsSL "https://raw.githubusercontent.com/$REPO/main/skills/$skill/SKILL.md" -o "$SKILLS_DIR/$skill/SKILL.md"
-done
-echo "ribs: installed skills -> $SKILLS_DIR (create-rib, review-rib)"
+# --- Claude skills (embedded in the CLI) ----------------------------------
+if [ -n "${RIBS_SKILLS_DIR:-}" ]; then
+  "$INSTALL_DIR/ribs" skills install --dir "$SKILLS_DIR"
+else
+  "$INSTALL_DIR/ribs" skills install
+fi
 
 # --- PATH hint ------------------------------------------------------------
 case ":$PATH:" in
