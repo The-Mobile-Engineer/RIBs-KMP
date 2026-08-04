@@ -54,6 +54,26 @@ Two layers, as in any KMP + native app:
    These are pure Swift (no Kotlin dependency); you implement the KMP-defined view interfaces against
    them via DI.
 
+## Scaffolding CLI
+
+`ribs` is a small native CLI (no JVM) that generates a RIB — Builder / Router / Interactor /
+Presenter / View, one class per file, matching the framework conventions.
+
+Install (macOS + Linux):
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/The-Mobile-Engineer/RIBs-KMP/main/install.sh | sh
+```
+
+Then, from inside your source tree:
+
+```sh
+ribs new Foo
+```
+
+It infers the package from the current directory (override with `--package` / `--dir`) and writes a
+`foo/` folder with the six files ready to fill in.
+
 ## Platforms
 
 | Platform | How you consume it |
