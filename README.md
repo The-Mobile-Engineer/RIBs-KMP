@@ -74,6 +74,10 @@ ribs new Foo
 It infers the package from the current directory (override with `--package` / `--dir`) and writes a
 `foo/` folder with the six files ready to fill in.
 
+The installer also drops two **Claude Code skills** into `~/.claude/skills` — `create-rib` (scaffold
+and fill a RIB by the conventions) and `review-rib` (check a RIB against them). See
+[`skills/`](skills/).
+
 ## Platforms
 
 | Platform | How you consume it |
