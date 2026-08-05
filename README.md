@@ -79,8 +79,15 @@ and fill a RIB by the conventions) and `review-rib` (check a RIB against them). 
 [`skills/`](skills/).
 
 `ribs` keeps itself up to date: once a day it checks for a newer signed release in the background and
-applies it (Ed25519-verified), so you stay current without doing anything. To opt out, set
-`RIBS_NO_UPDATE_CHECK=1`. You can also force it any time with `ribs self-update`.
+applies it (Ed25519-verified), so you stay current without doing anything. Force it any time with
+`ribs self-update`. To turn it off:
+
+```sh
+ribs config set auto-update false     # persistent
+RIBS_AUTO_UPDATE=false ribs new Foo   # one-off
+```
+
+Settings live in `~/.config/ribs/config.json`; run `ribs config` to see them.
 
 ## Platforms
 
