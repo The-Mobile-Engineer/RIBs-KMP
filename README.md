@@ -78,6 +78,10 @@ The installer also drops two **Claude Code skills** into `~/.claude/skills` — 
 and fill a RIB by the conventions) and `review-rib` (check a RIB against them). See
 [`skills/`](skills/).
 
+`ribs` keeps itself up to date: once a day it checks for a newer signed release in the background and
+applies it (Ed25519-verified), so you stay current without doing anything. To opt out, set
+`RIBS_NO_UPDATE_CHECK=1`. You can also force it any time with `ribs self-update`.
+
 ## Platforms
 
 | Platform | How you consume it |
