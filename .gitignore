@@ -1,0 +1,5 @@
+
+# SwiftPM / Xcode local state
+.swiftpm/
+Package.resolved
+.build/
